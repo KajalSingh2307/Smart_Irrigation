@@ -16,16 +16,16 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("🚿 Smart Sprinkler Prediction System")
+st.title("Smart Sprinkler Prediction System")
 st.caption("A predictive system to automate water sprinkling using sensor data.")
 
-with st.expander("ℹ️ About This App"):
+with st.expander("About This App"):
     st.write("""
     This app uses a machine learning model to predict the ON/OFF status of sprinklers across 20 parcels
     based on scaled sensor data. All inputs range from 0 (low) to 1 (high).
     """)
 
-st.subheader("🌱 Enter Scaled Sensor Values")
+st.subheader("Enter Scaled Sensor Values")
 sensor_values = []
 cols = st.columns(4)
 
@@ -54,3 +54,4 @@ if st.button("🔍 Predict Sprinkler Status"):
 
 # Footer
 st.markdown("<div class='footer'>Developed by Kajal Singh | Aug 2025</div>", unsafe_allow_html=True)
+
